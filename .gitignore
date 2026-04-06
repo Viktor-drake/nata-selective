@@ -1,0 +1,7 @@
+_tmp_*.txt
+_bash_test.txt
+_repo_create.json
+_deploy.log
+pyver.log
+.claude/
+nata_selective_redesign.html
