@@ -171,6 +171,28 @@
             background: radial-gradient(ellipse, rgba(0,0,0,0.08) 0%, transparent 70%);
         }
 
+        .hero-photo-img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            object-position: center 20%;
+            border-radius: 200px 200px 24px 24px;
+            display: block;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+
+        .hero-photo::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 40px;
+            background: radial-gradient(ellipse, rgba(0,0,0,0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
         /* === STATS === */
         .stats {
             padding: 60px 0;
@@ -846,9 +868,7 @@
                 </div>
             </div>
             <div class="hero-photo animate animate-d2">
-                <div class="hero-photo-placeholder">
-                    Фото<br>Натальи
-                </div>
+                <img src="natalia.jpg" alt="Наталья Selective" class="hero-photo-img" loading="eager">
             </div>
         </div>
     </div>
